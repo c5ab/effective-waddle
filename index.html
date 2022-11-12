@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,  initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  </head>
+  <body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"></a>
+              </li>
+              <li class="nav-item">
+                <button type="button" onclick="dodge()" class="btn btn-primary">Home</button>
+
+
+               
+              </li>
+
+              <li class="nav-item">
+                <img onclick="dodge()" src="./refresh (2).png" width="40px" height="40px" alt="">
+
+               
+              </li>
+              
+             
+            </ul>
+            
+
+         
+          </div>
+        </div>
+      </nav>
+
+      
+
+      </form>
+<div style="text-align:center;"><img src="./website.png" width="250px" height="250px" alt=""></div>
+<input class="form-control color-muted me-2"  id="search-input" class="search-input" type="search" placeholder="Search" aria-label="Search">
+<button onclick="search()" class="btn btn-outline-success"  type="submit">Search</button>
+
+
+<form style="width: fit-content ; height: fit-content;">
+<script>
+    const searchInput = document.querySelector("#search-input");
+
+searchInput.addEventListener("keydown", function(event) {
+if(event.code === "Enter") {
+search();
+}
+});
+function dodge(){
+window.location.reload()
+}
+function search() {
+const input = searchInput.value;
+
+window.location.href = "https://www.google.com/search?q=" + input + "&rlz=1C5CHFA_enNZ948NZ948&oq=" + input + "&aqs=chrome.0.69i59l2j46i175i199i433j46i199i291i433j46j0i433j0j69i60.875j0j9&sourceid=chrome&ie=UTF-8"
+}
+</script>
+  </body>
+</html>
